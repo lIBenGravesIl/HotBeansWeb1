@@ -41,3 +41,31 @@
     background: linear-gradient(to right,rgb(224, 216, 216), rgb(151, 144, 144));
     z-index: -1;
 }
+.title{
+    font-family: "Poppins";
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    margin-right: -90%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+.comment{
+    font-family: "Poppins";
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding-top: 1%;
+}
+.down-scroll{
+    display: flex;
+    height: 12px;
+    max-width: 1px;
+}
