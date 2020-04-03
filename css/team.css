@@ -1,26 +1,117 @@
 *{
-    padding: none;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
-
+body{
+    background: linear-gradient(to right,rgb(224, 224, 224), rgb(117, 117, 117));
+}
 .Team{
     font-family: "Poppins";
     font-size: 80px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 34.6%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    color: white;
 }
 .teaminfo{
     font-family: "Poppins";
     font-size: 30px;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    color: white;
+    top: 60%;
+    left: 18.3%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-
+.clickthem{
+    font-family: "Poppins";
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 39%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to right,rgb(224, 224, 224), rgb(117, 117, 117));
+    
+}
+.title{
+    font-family: "Poppins";
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    margin-right: -90%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+.people{
+    margin: 0 auto;
+    position: absolute;
+    top: 140%;
+    left: 59%;
+    margin-right: -40%;
+    transform: translate(-50%,-50%);
+}
+.people a{
+    outline: none;
+    display: inline-flex;
+    position: relative;
+    
+}
+.person{
+    max-width: 30%;
+    max-height: 30%;
+    margin: none;
+    border: 2px solid grey;
+    border-radius: 2px;
+    opacity: .8;
+}
+.person:hover{
+    border-color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+.bg-modal, .bg-modal-2, .bg-modal-3, .bg-modal-4, .bg-modal-5, .bg-modal-6{
+    width: 100%;
+    height:220%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-contents, .modal-contents-2, .modal-contents-3, .modal-contents-4, .modal-contents-5, .modal-contents-6{
+    margin-top: 600px;
+    width: 600px;
+    height: 420px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    font-family: Poppins;
+    position: relative;
+}
+.close, .close-2, .close-3, .close-4, .close-5, .close-6{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 37px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
