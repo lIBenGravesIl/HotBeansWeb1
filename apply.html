@@ -4,15 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/apply.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <title>theteam</title>
 </head>
 <body>
     <header>
+        <nav>
+            <a class="title" href="index.html">Hot Beans</a>
+        </nav>
         <h3 class="Apply">Apply</h3>
 
         <div class="application">
-            <p>Here you can find the different courses that we offer and use to recruit people into our company. Please fill in Your submission with an attached CV Belo</p>
+            <p>Here you can find the different courses that we offer and use to recruit people into our company. If You are looking for a place among the team then please fill in the application box below.</p>
         </div>
     </header>
+    <div class="courses">
+        <div class="codecademy">
+            <nav>
+                <a href="https://www.codecademy.com/learn/paths/web-development"><img src="/images/cadecademy.png"></a>
+            </nav>
+        </div>
+        <div class="w3schools">
+            <nav>
+                <a href="https://www.w3schools.com/html/"><img src="images/w3 schools.png"></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="wrapper" id="formtp">
+        <div class="content">
+            <h1>Application Form</h1>
+            <p></p>
+        </div>
+
+
+        <div class="form" >
+            <div class="top-form">
+                <div class="inner-form">
+                    <div class="label">Name</div>
+                    <input type="text" placeholder="John Doe">
+                </div>
+                <div class="inner-form">
+                    <div class="label">Email</div>
+                    <input type="text" placeholder="Example@email.com">
+                </div>
+                <div class="inner-form">
+                    <div class="label">Phone</div>
+                    <input type="text" placeholder="1234567890">
+                </div>
+            </div>
+            <div class="middle-form">
+                <div class="inner-form">
+                    <div class="label">Subject</div>
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div> 
+            <div class="cv-box">
+                <div class="inner-form">
+                    <div class="label">CV</div>
+                    <input type="file" id="real-file" hidden="hidden">
+                    <button type="button" id="custom-button">Choose File</button>
+                    <span id="custom-text">No File Selected</span>
+                </div>
+            </div>            
+            <div class="bottom-form">
+                <div class="inner-form">
+                    <div class="label">Message (Optional)</div>
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+            </div>
+
+            <div class="btn">Send Form</div>
+        </div>
+    </div>
+    <div class="apply-slider"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
+    <script src="js/apply.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $("input[type='text'], textarea,").val("");
+            });
+        });
+    </script>
+</body>

@@ -57,6 +57,7 @@ body{
     list-style: none;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
 .people{
     margin: 0 auto;
