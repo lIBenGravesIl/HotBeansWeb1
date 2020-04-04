@@ -87,7 +87,6 @@ a {
     background-size: 0% 2px;
     transition: .3s;
 }
-
 a:hover, a:focus {
     background-size: 100% 2px;
 }
