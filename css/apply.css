@@ -203,3 +203,13 @@
 .content{
     color: white;
 }
+.qualifications{
+    font-family: "Poppins";
+    color: white;
+    position: absolute;
+    top: 115%;
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+    left: 42.4%;
+}

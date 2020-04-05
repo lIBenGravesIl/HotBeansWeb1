@@ -4,10 +4,8 @@
         margin: 0;
         box-sizing: border-box;
         scroll-behavior: smooth;
-        
-    }@media only screen and (max-width: 800px) {
-        //put new styles in here 
-        }
+    }
+    
     .slider {
         position: absolute;
         top: 0;
@@ -119,10 +117,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
-}@media only screen and (max-width: 800px) {
-    //put new styles in here 
-    }
+}
 .slider {
     position: absolute;
     top: 0;
